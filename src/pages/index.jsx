@@ -1,6 +1,7 @@
 import {  Box, Center, Divider, Flex, Heading, SimpleGrid} from "@chakra-ui/react";
 import { Banner } from "../Components/Banner";
 import { Card } from "../Components/Card";
+import { Carousel } from "../Components/carousel";
 
 
 export default function Home() {
@@ -24,15 +25,19 @@ export default function Home() {
     <Divider orientation='horizontal' borderBottomWidth={'3px'}/>
     </Center>
 
-    <Flex width='100%'  alignItems={'center'} justifyContent='center' mb={6}>
-      <Heading fontWeight={'normal'}  color={'gray.600'}>
+    <Flex width='100%'  alignItems={'center'} justifyContent='center' mb={6} flexDir='column' as={'section'}>
+      <Heading fontWeight={'normal'}  color={'gray.600'} mb={16}>
         <Box textAlign={'center'}>
         Vamos Nessa? <br />
         Então escolha seu continente
         </Box>
         
       </Heading>
+    <Carousel/>
+
     </Flex>
+   
+
     </>
     
 
