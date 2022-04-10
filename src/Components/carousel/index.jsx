@@ -7,24 +7,40 @@ import "swiper/css/navigation";
 
 
 import { Navigation } from "swiper";
-import { Box } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 
 
 export function Carousel(){
 
     return(
-        <Box width={'90%'} margin='auto' height='300px' display={'flex'} alignItems={'center'} justifyContent='center'>
+        <Box width={'80%'} margin='auto' height='500px' display={'flex'} alignItems={'center'} justifyContent='center'>
 <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide 
+        style={{backgroundImage:`url('/images/continentes/Europa.png')`,backgroundPosition:'center',backgroundSize:'cover'}}>
+            <Flex flexDir={'column'}>
+                <Heading mb={6}>
+                    Europa 
+                </Heading>
+                <Text fontSize={'1.1rem'}>
+                        O continente mais antigo
+                </Text>
+            </Flex>
+        </SwiperSlide>
+        <SwiperSlide 
+        style={{backgroundImage:`url('/images/continentes/asia.jpg')`,backgroundPosition:'center',backgroundSize:'cover'}}>
+            <Flex flexDir={'column'}>
+                <Heading mb={6}>
+                    Ásia 
+                </Heading>
+                <Text fontSize={'1.1rem'}>
+                        O maior continente do planeta terra
+                </Text>
+            </Flex>
+            
+            
+            </SwiperSlide>
+        
       </Swiper>
         </Box>
          

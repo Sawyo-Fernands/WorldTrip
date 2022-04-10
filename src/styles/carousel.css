@@ -5,8 +5,10 @@
   
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
-    background: #fff;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 'bold';
+    font-size: 1.3rem;
   
     /* Center slide text vertically */
     display: -webkit-box;

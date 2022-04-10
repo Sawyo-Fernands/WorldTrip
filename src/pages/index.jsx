@@ -26,7 +26,7 @@ export default function Home() {
     </Center>
 
     <Flex width='100%'  alignItems={'center'} justifyContent='center' mb={6} flexDir='column' as={'section'}>
-      <Heading fontWeight={'normal'}  color={'gray.600'} mb={16}>
+      <Heading fontWeight={'normal'}  color={'gray.600'} mb={12}>
         <Box textAlign={'center'}>
         Vamos Nessa? <br />
         Então escolha seu continente
