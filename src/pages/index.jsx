@@ -1,9 +1,11 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Card } from "../Components/Card";
 
 
 export default function Home() {
   return (
-    <Flex py={16} bg='gray.900' px={14}  backgroundImage={`url('/images/Background.png')`} as='section' 
+    <>
+    <Flex py={'16'} bg='gray.900' px={'14'}  backgroundImage={`url('/images/Background.png')`} as='section' 
     backgroundRepeat={'no-repeat'} backgroundSize='cover' alignItems={'center'} justify='space-around' flexDir={['column','column','row']}>
       <Box width={['90%','600px']}>
         <Text color={'white'} as='h1' fontSize={['2xl','5xl']} mb={[4,6]}>
@@ -18,6 +20,16 @@ export default function Home() {
         <Image src="/images/Airplane.png" alt="Avião" mb={[0,0,'-11rem']} />
       </Box>
     </Flex>
+
+    <Flex w={'100%'} py={24}  px={['24','36']} justify='space-around' flexDir={['column','column','column','row']}>
+      <Card image='/images/card/Nightlife.png'/>
+      <Card image='/images/card/Beach.png'/>
+      <Card image='/images/card/Modern.png'/>
+      <Card image='/images/card/Classic.png'/>
+      <Card image='/images/card/More.png'/>
+    </Flex>
+    </>
+    
 
   )
 }
