@@ -3,7 +3,6 @@ import { useBreakpointValue } from '@chakra-ui/react'
 
 
 
-
 export function Banner(){
 
     const isVisibleAirplane=useBreakpointValue({
@@ -13,7 +12,8 @@ export function Banner(){
 
 
     return(
-        <Flex py={'16'} bg='gray.900' px={'14'}  backgroundImage={`url('/images/Background.png')`} as='section' 
+        
+         <Flex py={['4','16']} bg='gray.900' px={'14'}  backgroundImage={`url('/images/Background.png')`} as='section' 
     backgroundRepeat={'no-repeat'} backgroundSize='cover' alignItems={'center'} justify='space-around' flexDir={['column','column','row']}>
       <Box width={['90%','600px']}>
         <Text color={'white'} as='h1' fontSize={['2xl','5xl']} mb={[4,6]}>
@@ -28,5 +28,8 @@ export function Banner(){
         <Image src="/images/Airplane.png" alt="Avião" mb={[0,0,'-11rem']}  />
       </Box>
     </Flex>
+        
+       
+    
     )
 }
