@@ -1,33 +1,25 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import {  Flex, SimpleGrid} from "@chakra-ui/react";
+import { Banner } from "../Components/Banner";
 import { Card } from "../Components/Card";
 
 
 export default function Home() {
   return (
     <>
-    <Flex py={'16'} bg='gray.900' px={'14'}  backgroundImage={`url('/images/Background.png')`} as='section' 
-    backgroundRepeat={'no-repeat'} backgroundSize='cover' alignItems={'center'} justify='space-around' flexDir={['column','column','row']}>
-      <Box width={['90%','600px']}>
-        <Text color={'white'} as='h1' fontSize={['2xl','5xl']} mb={[4,6]}>
-        5 Continentes, <br />
-        infinitas possibilidades.
-        </Text>
-        <Text color={'white'} fontSize={['1rem',"1.6rem"]} fontWeight={'light'}>
-        Chegou a hora de tirar do papel a viagem que você <br /> sempre sonhou. 
-        </Text>
-      </Box>
-      <Box width={['90%','500px']}>
-        <Image src="/images/Airplane.png" alt="Avião" mb={[0,0,'-11rem']} />
-      </Box>
-    </Flex>
+    <Banner/>
 
-    <Flex w={'100%'} py={24}  px={['24','36']} justify='space-around' flexDir={['column','column','column','row']}>
+    <SimpleGrid  py={24}  px={['24','36']} columns={[1,2,2,2,5]} spacing={'1rem'} gap='1rem'>
+      
       <Card image='/images/card/Nightlife.png'/>
       <Card image='/images/card/Beach.png'/>
+      
+
       <Card image='/images/card/Modern.png'/>
       <Card image='/images/card/Classic.png'/>
+    
       <Card image='/images/card/More.png'/>
-    </Flex>
+      
+    </SimpleGrid>
     </>
     
 
