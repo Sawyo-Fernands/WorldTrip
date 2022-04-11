@@ -24,8 +24,8 @@ export function Banner(){
         Chegou a hora de tirar do papel a viagem que você sempre sonhou. 
         </Text>
       </Box>
-      <Box width={['90%','500px']} display={isVisibleAirplane}>
-        <Image src="/images/Airplane.png" alt="Avião" mb={[0,0,'-11rem']}  />
+      <Box width={['90%','500px']} display={isVisibleAirplane} >
+        <Image src="/images/Airplane.png" alt="Avião" mb={[0,0,'-10rem']}  />
       </Box>
     </Flex>
         

@@ -9,7 +9,7 @@ export default function Home() {
     <>
     <Banner/>
 
-    <SimpleGrid  py={[16,20,24]}  px={['24','36']} columns={[2,2,2,2,5]} spacing={'1rem'} gap='1rem' as={'section'}>
+    <SimpleGrid  py={[16,20,24]}  px={['24','36']} columns={[2,2,2,2,5]} spacing={'1rem'} mb={['0rem','-2rem','-3rem','-4rem','-6rem']} as={'section'}>
       
       <Card image='/images/card/Nightlife.png' />
       <Card image='/images/card/Beach.png'/>
@@ -21,7 +21,7 @@ export default function Home() {
       <Card image='/images/card/More.png'/>
       
     </SimpleGrid>
-    <Center height='50px' width={'10%'} margin='0 auto' mb={'1rem'}>
+    <Center height='60px' width={'10%'} margin='0 auto' mb={'1rem'} >
     <Divider orientation='horizontal' borderBottomWidth={'3px'} borderColor='black' />
     </Center>
 
