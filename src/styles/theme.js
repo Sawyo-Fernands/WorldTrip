@@ -15,7 +15,10 @@ export const Theme=extendTheme({
           "50": "#EEEEF2",
         }
       },
-  
+      fonts: {
+        heading: 'Poppins, sans-serif',
+        body: 'Poppins, sans-serif',
+      },
     
     styles:{
         global:{
